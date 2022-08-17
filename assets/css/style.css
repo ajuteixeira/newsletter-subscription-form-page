@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+:root {
+  --main-font: 'Syne Mono', monospace;
+  --light-salmon: #ffe4c4;
+  --dark-salmon: #e9967a;
+  --main-font-color: #333;
+  --second-font-color: #666;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: var(--main-font);
+  text-align: center;
+  color: #333;
+  background-color: var(--light-salmon);
+}
+
+.header {
+  padding: 3.5rem;
+}
+
+.header__logo {
+  max-width: 4rem;
+  opacity: 85%;
+  content: url('../img/logo.png');
+}
+
+.header__logo:hover {
+  opacity: 100%;
+}
+
+.header__title {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+
+.header__subtitle, .form__completed__text {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.form, .form__completed {
+  width: 60%;
+  height: auto;
+  padding: 3rem 4rem;
+  margin: 0 auto 7rem auto;
+  border: 0;
+  border-radius: 2rem;
+  background-color: #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.form__title, .form__completed__title {
+  padding: 0 0 .9rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  border: none;
+  margin-right: 1rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: .5rem;
+  margin-bottom: 1.3rem;
+  border: none;
+  font-family: var(--main-font);
+  color: var(--second-font-color);
+  background-color: rgb(228, 239, 253);
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__input::placeholder {
+  font-family: var(--main-font);
+  color: #ccc;
+}
+
+.form__label {
+  padding: .5rem 0;
+  font-size: 1rem;
+}
+
+.form__button {
+  padding: 1rem 1.3rem;
+  margin: 0;
+  border: 0;
+  border-radius: 1.7rem;
+  cursor: pointer;
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+  background-color: var(--dark-salmon);
+}
+
+.form__button:hover {
+  opacity: 85%;
+}
+
+.formn__input__subtitle {
+  padding: 0;
+  margin-top: -.9rem;
+  font-weight: normal;
+}
+
+.form__completed__icon {
+  content: url('../img/icon.gif');
+  width: 11rem;
+  border: 5px solid var(--dark-salmon);
+}
+
+.form__completed__icon:hover {
+  opacity: 85%;
+}
+
+
+footer {
+  width: 100%;
+  padding: 1rem;
+  margin: 0;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  color: var(--main-font-color);
+  background-color: #fefefe;
+}
+
+footer a {
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--dark-salmon);
+}
+
+footer a:hover {
+  opacity: 85%;
+}

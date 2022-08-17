@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter de bolso | Inscrever-se</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./assets/img/favicon.png"/>
+</head>
+
+<body>
+  <main>
+    <section class="header">
+      <span class="header__logo"></span>
+      <h1 class="header__title">Newsletter de Bolso_</h1>
+      <h2 class="header__subtitle">Realize seu cadastro para assinar a nossa newsletter :)</h2>
+    </section>
+    <section class="form">
+      <h3 class="form__title">Formulário de cadastro</h3>
+      <form action="./form-page__completed.html" class="form__area">
+        <fieldset>
+          <label for="name" class="form__label">Nome</label>
+          <input type="text" class="form__input" id="name" placeholder="Nome"
+            title="Este campo é obrigatório e deve ser preenchido." required>
+          <label for="email" class="form__label">Seu melhor email</label>
+          <input type="email" class="form__input" id="email" placeholder="seuemail@exemplo.com"
+            title="Este campo é obrigatório e deve ser preenchido com um email válido." required>
+          <label for="cel" class="form__label">Celular*</label>
+          <input type="tel" class="form__input" id="cel" onkeydown="return phoneMask(event)"
+            placeholder="(xx) xxxxx-xxxx" title="O celular deve conter um DDD válido e incluir o número 9 no início.">
+          <h4 class="formn__input__subtitle">*Caso queira receber novidades por WhatsApp também :)</h4>
+        </fieldset>
+        <button class="form__button">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+<footer>
+  Made with ♡ by <a href="https://github.com/ajuteixeira">Juliana Teixeira</a> | 2022
+</footer>
+
+</html>
